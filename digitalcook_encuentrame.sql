@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-12-2017 a las 00:26:41
+-- Tiempo de generación: 04-12-2017 a las 01:25:25
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 7.1.7
 
@@ -277,7 +277,10 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (6, 5, '_edit_lock', '1512342773:1'),
 (7, 6, '_edit_last', '1'),
 (8, 6, '_edit_lock', '1512342878:1'),
-(9, 6, '_wp_page_template', 'templates/home_tpl.php');
+(9, 6, '_wp_page_template', 'templates/home_tpl.php'),
+(10, 8, '_edit_last', '1'),
+(11, 8, '_edit_lock', '1512345781:1'),
+(12, 8, '_wp_page_template', 'templates/page_tpl.php');
 
 -- --------------------------------------------------------
 
@@ -322,7 +325,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (4, 1, '2017-12-03 23:10:55', '2017-12-03 23:10:55', 'Esta es una página de ejemplo, Es diferente a una entrada de un blog porque se mantiene estática y se mostrará en la barra de navegación (en la mayoría de temas). Casi todo el mundo comienza con una página Sobre mí para presentarse a los potenciales visitantes. Podría ser algo así:\n\n<blockquote>¡Hola!: Soy mensajero por el día, aspirante a actor por la noche y esta es mi web. Vivo en Madrid, tengo perrazo llamado Juan y me encantan las piñas coladas (y que me pille un chaparrón)</blockquote>\n\n… o algo así:\n\n<blockquote>La empresa Calcetines XYZ se fundó en 1971, y ha estado produciendo calcetines de calidad para sus clientes desde entonces. Ubicada en Gothan, la empresa XYZ tiene más de 2.000 empleados e intenta ayudar en lo que puede para mejorar la vida en Gothan</blockquote>\n\nSi eres nuevo en WordPress deberías ir a <a href=\"http://localhost/encuentrame_wp/wp-admin/\">tu escritorio</a> para borrar esta página y crear algunas nuevas con tu contenido. ¡Pásalo bien!', 'Página de ejemplo', '', 'inherit', 'closed', 'closed', '', '2-revision-v1', '', '', '2017-12-03 23:10:55', '2017-12-03 23:10:55', '', 2, 'http://localhost/encuentrame_wp/2017/12/03/2-revision-v1/', 0, 'revision', '', 0),
 (5, 1, '2017-12-03 23:12:53', '0000-00-00 00:00:00', '', 'home', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-12-03 23:12:53', '2017-12-03 23:12:53', '', 0, 'http://localhost/encuentrame_wp/?page_id=5', 0, 'page', '', 0),
 (6, 1, '2017-12-03 23:13:02', '2017-12-03 23:13:02', '', 'home', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2017-12-03 23:16:58', '2017-12-03 23:16:58', '', 0, 'http://localhost/encuentrame_wp/?page_id=6', 0, 'page', '', 0),
-(7, 1, '2017-12-03 23:13:02', '2017-12-03 23:13:02', '', 'home', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2017-12-03 23:13:02', '2017-12-03 23:13:02', '', 6, 'http://localhost/encuentrame_wp/2017/12/03/6-revision-v1/', 0, 'revision', '', 0);
+(7, 1, '2017-12-03 23:13:02', '2017-12-03 23:13:02', '', 'home', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2017-12-03 23:13:02', '2017-12-03 23:13:02', '', 6, 'http://localhost/encuentrame_wp/2017/12/03/6-revision-v1/', 0, 'revision', '', 0),
+(8, 1, '2017-12-04 00:02:49', '2017-12-04 00:02:49', '', 'sanfernando', '', 'publish', 'closed', 'closed', '', 'sanfernando', '', '', '2017-12-04 00:03:01', '2017-12-04 00:03:01', '', 0, 'http://localhost/encuentrame_wp/?page_id=8', 0, 'page', '', 0),
+(9, 1, '2017-12-04 00:02:49', '2017-12-04 00:02:49', '', 'sanfernando', '', 'inherit', 'closed', 'closed', '', '8-revision-v1', '', '', '2017-12-04 00:02:49', '2017-12-04 00:02:49', '', 8, 'http://localhost/encuentrame_wp/2017/12/04/8-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
@@ -591,12 +596,12 @@ ALTER TABLE `wp_options`
 -- AUTO_INCREMENT de la tabla `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT de la tabla `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `wp_termmeta`
 --
