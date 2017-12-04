@@ -21,6 +21,23 @@
 		var icon_origin = " http://sarai.dhdinc.org/sanfernando/wp-content/themes/manya-sanfernando/assets/images/static/pin_mapa2.png"; 	
 
 	}
+	encuentrame.prototype.search = function(search,url_json){
+		$.ajax({
+			url: url_json,
+			data: {tipo: search, action: 'search'},
+			method: 'post',
+			dataType: 'json',
+			beforeSubmit: function(){
+				$("body").addClass("loading");
+			},
+			success: function(data){
+			   	
+			},
+			complete: function(){
+				$("body").removeClass("loading");
+			},
+		});	
+	}
 
 
 	encuentrame.prototype.setMyLocation = function() {
