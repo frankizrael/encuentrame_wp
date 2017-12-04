@@ -12,7 +12,7 @@
 			<a href="./" class="brand-logo">Encuentra.me</a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a id="search-button"><i class="material-icons">search</i></a></li>
-				<li><a href="./login.html">Login</a></li>
+				<li><a href="./login">Login</a></li>
 			</ul>
 		</div>
 		<div id="nav-wrapper-search" class="nav-wrapper hidden">
